@@ -17,22 +17,17 @@ export default defineComponent({
   data() {
     return {
       tasks: [
-        { id: 1, name: 'Doctors Appointment' },
-        { id: 2, name: 'Teachers Appointment' }
+        // { id: 1, name: 'Doctors Appointment' },
+        // { id: 2, name: 'Teachers Appointment' }
       ]
     }
   },
-  // created() {
-  //   this.tasks = [{
-  //     id: 1,
-  //     name: 'Doctors Appointment',
-  //   },
-  //   {
-  //     id: 2,
-  //     name: 'Teachers Appointment',
-  //   }
-  //   ]
-  // }
+  created() {
+    this.tasks = [
+      { id: 1, name: 'Doctors Appointment', reminder : true },
+      { id: 2, name: 'Teachers Appointment', reminder : false }
+    ]
+  }
 });
 </script>
 
